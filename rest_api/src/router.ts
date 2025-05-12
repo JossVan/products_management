@@ -1,9 +1,8 @@
 import { Router } from "express";
+import { createProdcut } from "./handlers/product";
 
 const router = Router();
 
-router.get('/api/products', (req, res) => {
-    res.send('Hello World!');
-});
+router.post('/', createProdcut);
 
 export default router;

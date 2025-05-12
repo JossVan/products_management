@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "NodeNext",
     "outDir": "./dist",
     "rootDir": "./src",
     "lib": ["ESNext"],
@@ -10,7 +10,10 @@
     "esModuleInterop": true,
     "declaration": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "NodeNext",
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
